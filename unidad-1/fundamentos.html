@@ -4,9 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        main{
+            width: 50%;
+            margin: auto;
+            border: 1px solid black;
+        }
+
+        ul,ol{
+            text-align: left;
+        }
+
+        table{
+            margin: auto;
+        }
+
+        th,td{
+            padding: 5px 10px 5px 10px;
+        }
+
+    </style>
 </head>
 <body>
+    <head>
+        <h1>Elementos basicos de HTML</h1>
+    </head>
+
+    <main>
+    <p>
+        En esta pagina se muestran ejemplos 
+        de los principales elementos para estructurar 
+        el contenido de una pagina web.
+    </p>
+
+    <h2>Encabezados</h2>
+    <p>
+        Existen 6 niveles y se debe respetar
+         el orden en el que se presenten.
+    </p><hr>
+
+    <h2>Listas</h2>
+
+        <h3>Lista desordenadas</h3>
+        <ul>
+            <li>Javascript</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Php</li>
+            <li>C#</li>
+        </ul>
+
+        <h3>listas ordenadas</h3>
+        <ol>
+            <li>windows</li>
+            <li>Linux</li>
+            <li>OSX</li>
+            <li>Solaris</li>
+        </ol>
     
+        <hr>
+    <h2>Tablas</h2>
+
+    <table border="1px" class="table table-striped table-dark">
+        <tr>
+            <th>Grupo</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+        </tr>
+        <tr>
+            <td>1K</td>
+            <td>Daniel Hernandez Ascencio</td>
+            <td>dherndez30@ucol.mx</td>
+        </tr>
+    </table>
+    <br><hr>
+    
+    <h2>Formularios</h2>
+
+    <form action="">
+        <div>
+            <label for="name">Nombre: </label>
+            <input type="text" name="" id="name">
+        </div>
+        <div>
+            <label for="correo">Correo: </label>
+            <input type="email" name="" id="correo">
+        </div>
+        <div>
+            <label for=""></label>
+        </div>
+        <div>
+            <label for="comen">Comentarios: </label>
+            <textarea name="" id="comen" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Enviar" class="btn btn-success">       
+    </form>
+    <br>
+    </main>
+
+
 </body>
 </html>
