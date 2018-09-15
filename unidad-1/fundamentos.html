@@ -5,41 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="fundamentos.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
     <title>Document</title>
-    <style>
-        body{
-            margin: 0;
-            width: 100%;
-            text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        main{
-            width: 50%;
-            margin: auto;
-            border: 1px solid black;
-        }
-
-        ul,ol{
-            text-align: left;
-        }
-
-        table{
-            margin: auto;
-        }
-
-        th,td{
-            padding: 5px 10px 5px 10px;
-        }
-
-    </style>
 </head>
 <body>
-    <head>
+    <header class="encabezado">
         <h1>Elementos basicos de HTML</h1>
-    </head>
+    </header><br><br>
 
-    <main>
+    <main id="principal">
     <p>
         En esta pagina se muestran ejemplos 
         de los principales elementos para estructurar 
@@ -74,7 +49,7 @@
         <hr>
     <h2>Tablas</h2>
 
-    <table class="table">
+    <table class="table table-striped">
         <tr>
             <th>Grupo</th>
             <th>Nombre</th>
@@ -93,7 +68,7 @@
     <form action="">
         <div>
             <label for="name">Nombre: </label>
-            <input type="text" name="" id="name">
+            <input type="text" name="" id="name" maxlength="10" size="25">
         </div>
         <div>
             <label for="correo">Correo: </label>
@@ -106,11 +81,21 @@
             <label for="comen">Comentarios: </label>
             <textarea name="" id="comen" cols="30" rows="10"></textarea>
         </div>
+        <div>
+            <label for="contra">Contraseña: </label>
+            <input type="password" id="contra">
+        </div>
+        <div>
+            <label for="color">Color: </label>
+            <input type="color" name="" id="color">
+        </div>
         <input type="submit" value="Enviar" class="btn btn-success">       
     </form>
     <br>
-    </main>
 
+    <h4 class="example">Ejemplo de hover</h4>
+    </main>
+<br><br>
 
 </body>
 </html>
